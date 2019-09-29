@@ -58,12 +58,12 @@ output = open("output.txt", "w")
 line1 = "Election Results"
 line2 = "--------------------------"
 line3 = (f"Total Votes: {total_votes}")
-line4 = str("--------------------------")
+line4 = "--------------------------"
 output.write('{}\n{}\n{}\n{}\n'.format(line1, line2, line3, line4))
 for i in range(len(candidates)):
-    line = str(f"{candidates[i]}: {percent_votes[i]} ({count_votes[i]})")
+    line = (f"{candidates[i]}: {percent_votes[i]} ({count_votes[i]})")
     output.write('{}\n'.format(line))
 line5 = "--------------------------"
-line6 = str(f"Winner: {winning_candidate}")
+line6 = (f"Winner: {winning_candidate}")
 line7 = "--------------------------"
 output.write('{}\n{}\n{}\n'.format(line5, line6, line7))  
